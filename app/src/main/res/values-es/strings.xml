@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gematria Calc</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="cls">AC</string>
+    <string name="del">del</string>
+    <string name="delException">¡Nada que borrar!</string>
+    <string name="calc">=</string>
+    <string name="alpha_s">α</string>
+    <string name="beta_s">β</string>
+    <string name="gamma_s">γ</string>
+    <string name="delta_s">δ</string>
+    <string name="epsilon_s">ε</string>
+    <string name="digamma_s">ϝ</string>
+    <string name="zeta_s">ζ</string>
+    <string name="eta_s">η</string>
+    <string name="theta_s">θ</string>
+    <string name="iota_s">ι</string>
+    <string name="kappa_s">κ</string>
+    <string name="lambda_s">λ</string>
+    <string name="mu_s">μ</string>
+    <string name="nu_s">ν</string>
+    <string name="xi_s">ξ</string>
+    <string name="omicron_s">ο</string>
+    <string name="pi_s">π</string>
+    <string name="rho_s">ρ</string>
+    <string name="reg_sigma">σ</string>
+    <string name="end_sigma">ς</string>
+    <string name="sigma_s">σ,ς</string>
+    <string name="tau_s">τ</string>
+    <string name="upsilon_s">υ</string>
+    <string name="phi_s">φ</string>
+    <string name="chi_s">χ</string>
+    <string name="psi_s">ψ</string>
+    <string name="omega_s">ω</string>
+    <string name="instr1">- Doble clic</string>
+    <string name="instr2">para ς</string>
+</resources>

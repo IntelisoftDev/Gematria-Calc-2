@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mrelativeLayout"
+        android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.intelisoftdev.gematriacalc2.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tableLayout">
+            <TableRow android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView android:layout_width="wrap_content"
+                    android:freezesText="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/textView"
+                    android:inputType="none"
+                    android:background="@drawable/border"
+                    android:typeface="serif"
+                    android:height="35dp"
+                    android:width="100dp"
+                    android:layout_column="1"
+                    android:layout_span="9" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp">
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/alpha_s"
+                    android:id="@+id/aBtn"
+                    android:longClickable="false"
+                    android:layout_column="0"
+                    android:onClick="aBtnClicked"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/beta_s"
+                    android:id="@+id/bBtn"
+                    android:layout_column="1"
+                    android:onClick="bBtnClicked"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"
+                    android:layout_width="match_parent" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/gamma_s"
+                    android:id="@+id/gBtn"
+                    android:layout_column="2"
+                    android:onClick="gBtnClicked"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/dBtn"
+                    android:layout_column="3"
+                    android:text="@string/delta_s"
+                    android:onClick="dBtnClicked"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/epsilon_s"
+                    android:id="@+id/eBtn"
+                    android:layout_column="4"
+                    android:onClick="eBtnClicked"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/zeta_s"
+                    android:id="@+id/zBtn"
+                    android:layout_column="6"
+                    android:onClick="zBtnClicked"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+            </TableRow>
+            <TableRow android:padding="2dp">
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/digamma_s"
+                    android:id="@+id/digammaBtn"
+                    android:layout_column="0"
+                    android:onClick="digammaBtnClicked"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/eta_s"
+                    android:id="@+id/hBtn"
+                    android:onClick="hBtnClicked"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_column="1"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/theta_s"
+                    android:id="@+id/thBtn"
+                    android:layout_column="2"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="thBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/iota_s"
+                    android:id="@+id/iBtn"
+                    android:layout_column="3"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="iBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/kappa_s"
+                    android:id="@+id/kBtn"
+                    android:layout_column="4"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="kBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:text="@string/cls"
+                    android:id="@+id/clsBtn"
+                    android:layout_column="6"
+                    android:onClick="clsBtnClicked"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+            </TableRow>
+            <TableRow android:padding="2dp">
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/lambda_s"
+                    android:id="@+id/lBtn"
+                    android:layout_column="0"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="lBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/mu_s"
+                    android:id="@+id/mBtn"
+                    android:layout_column="1"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="mBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/nu_s"
+                    android:id="@+id/nBtn"
+                    android:layout_column="2"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="nBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/xi_s"
+                    android:id="@+id/xBtn"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="xBtnClicked"
+                    android:layout_column="3"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/omicron_s"
+                    android:id="@+id/oBtn"
+                    android:layout_column="4"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="oBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:id="@+id/delBtn"
+                    android:textAllCaps="false"
+                    android:text="@string/del"
+                    android:layout_column="6"
+                    android:onClick="delBtnClicked"
+                    android:typeface="serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp">
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/pi_s"
+                    android:id="@+id/pBtn"
+                    android:layout_column="0"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="pBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/rho_s"
+                    android:id="@+id/rBtn"
+                    android:layout_column="1"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="rBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/sigma_s"
+                    android:id="@+id/sBtn"
+                    android:layout_column="2"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="sBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/tau_s"
+                    android:id="@+id/tBtn"
+                    android:layout_column="3"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="tBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/upsilon_s"
+                    android:id="@+id/uBtn"
+                    android:layout_column="4"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="uBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/calcBtn"
+                    android:longClickable="false"
+                    android:textStyle="normal"
+                    android:onClick="calcBtnClicked"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_column="6"
+                    android:text="="
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+            </TableRow>
+
+            <TableRow android:padding="2dp">
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/phiBtn"
+                    android:text="@string/phi_s"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="phiBtnClicked"
+                    android:layout_column="0"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/cBtn"
+                    android:text="@string/chi_s"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="cBtnClicked"
+                    android:layout_column="1"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/psi_s"
+                    android:id="@+id/psiBtn"
+                    android:layout_column="2"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="psiBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:text="@string/omega_s"
+                    android:id="@+id/omegaBtn"
+                    android:layout_column="3"
+                    android:typeface="serif"
+                    style="?android:attr/buttonStyleSmall"
+                    android:onClick="omegaBtnClicked"
+                    android:background="@drawable/r_button1"
+                    android:textColor="#ffffff"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <TextView
+                    android:id="@+id/sumView"
+                    android:enabled="true"
+                    android:background="@drawable/border"
+                    android:typeface="serif"
+                    android:textAlignment="center"
+                    android:layout_gravity="top"
+                    android:width="100dp"
+                    android:height="30dp"
+                    android:layout_column="4"
+                    android:layout_span="5"/>
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+    <com.intelisoftdev.gematriacalc2.CanvasView
+        android:id="@+id/instrCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6a000000"
+        android:contextClickable="true"
+        android:onClick="instrCanvasClicked"/>
+</FrameLayout>
