@@ -477,6 +477,7 @@
                 <TextView
                     android:id="@+id/sumView"
                     android:enabled="true"
+                    android:freezesText="true"
                     android:background="@drawable/border"
                     android:typeface="serif"
                     android:textAlignment="center"
