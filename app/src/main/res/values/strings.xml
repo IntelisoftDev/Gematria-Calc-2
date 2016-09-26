@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Gematria Calc2</string>
-    <string name="instr1">Double tap</string>
-    <string name="instr2">to get ς</string>
+    <string name="instr1">Click</string>
+    <string name="instr2">once for σ</string>
+    <string name="instr3">or twice for ς</string>
     <string name="delException">Nothing to delete !</string>
     <string name="cls">AC</string>
     <string name="del">del</string>

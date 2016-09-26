@@ -33,6 +33,7 @@
     <string name="chi_s">χ</string>
     <string name="psi_s">ψ</string>
     <string name="omega_s">ω</string>
-    <string name="instr1">- Doble clic</string>
-    <string name="instr2">para ς</string>
+    <string name="instr2">una vez para σ</string>
+    <string name="instr1">Haga clic</string>
+    <string name="instr3">o dos veces para ς</string>
 </resources>

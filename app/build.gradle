@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '24.0.0 rc4'
+    compileSdkVersion 24
+    buildToolsVersion '24.0.2'
     defaultConfig {
         applicationId "com.intelisoftdev.gematriacalc2"
-        minSdkVersion 19
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 3
+        versionName '1.2'
     }
     buildTypes {
         release {
@@ -17,19 +17,18 @@ android {
         }
     }
     productFlavors {
-        Api_19 {
-            minSdkVersion 19
+        Api_24 {
+            minSdkVersion 24
+            targetSdkVersion 24
             applicationId 'com.intelisoftdev.gematriacalc2'
-            targetSdkVersion 23
-            versionCode 2
-            versionName '1.1'
+            versionCode 3
+            versionName '1.2'
         }
-        Api_23 {
-            minSdkVersion 23
+        Api_21 {
+            minSdkVersion 21
             applicationId 'com.intelisoftdev.gematriacalc2'
-            targetSdkVersion 23
-            versionCode 2
-            versionName '1.1'
+            versionCode 3
+            versionName '1.2'
         }
     }
 }
@@ -37,6 +36,6 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
 }

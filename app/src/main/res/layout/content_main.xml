@@ -73,7 +73,8 @@
                     style="?android:attr/buttonStyleSmall"
                     android:background="@drawable/r_button1"
                     android:textColor="#ffffff"
-                    android:layout_width="match_parent" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
                 <Space
                     android:layout_width="20px"
@@ -89,7 +90,8 @@
                     style="?android:attr/buttonStyleSmall"
                     android:background="@drawable/r_button1"
                     android:textColor="#ffffff"
-                    android:layout_width="wrap_content" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <Space
                     android:layout_width="20px"
@@ -104,7 +106,8 @@
                     android:typeface="serif"
                     style="?android:attr/buttonStyleSmall"
                     android:background="@drawable/r_button1"
-                    android:textColor="#ffffff"/>
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content" />
 
                 <Space
                     android:layout_width="20px"
@@ -119,7 +122,8 @@
                     android:typeface="serif"
                     style="?android:attr/buttonStyleSmall"
                     android:background="@drawable/r_button1"
-                    android:textColor="#ffffff"/>
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content" />
 
                 <Space
                     android:layout_width="20px"
@@ -490,6 +494,7 @@
             </TableRow>
         </TableLayout>
     </RelativeLayout>
+
     <com.intelisoftdev.gematriacalc2.CanvasView
         android:id="@+id/instrCanvas"
         android:layout_width="match_parent"
